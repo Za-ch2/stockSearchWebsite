@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Price Lookup</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<style>
+		body {
+			padding-top: 5rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<h1 class="text-center mb-5">Stock Price Lookup</h1>
+				<div class="card">
+					<div class="card-header">
+						Stock Price
+					</div>
+					<div class="card-body">
+						<p class="card-text">The close price of {{ symbol }} is <strong>{{ close }}</strong>.</p>
+					</div>
+				</div>
+				<div class="mt-3">
+					<a href="/" class="btn btn-primary">Back to search</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
