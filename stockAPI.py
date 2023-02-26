@@ -20,7 +20,7 @@ def get_stock_data(symbol):
 def index():
     error = None
     if request.method == 'POST':
-        symbol = request.form['symbol']
+        symbol = request.form['symbol'].upper()
         try:
             data = get_stock_data(symbol)
             stockSymbol = data['symbol']
